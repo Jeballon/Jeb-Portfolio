@@ -1,0 +1,226 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jeb's Roblox Portfolio</title>
+  <style>
+    /* Basic Reset & Fonts */
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #121212;
+      color: #eee;
+      line-height: 1.6;
+      padding: 20px;
+    }
+    h1, h2, h3 {
+      margin: 0 0 10px;
+    }
+    h1 {
+      font-size: 2.8rem;
+      text-align: center;
+      margin-bottom: 0.3em;
+    }
+    h2 {
+      font-size: 1.8rem;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      text-align: center;
+      color: #1E90FF; /* Electric Blue */
+    }
+    h3 {
+      font-size: 1.2rem;
+      margin-bottom: 0.3em;
+      color: #1E90FF; /* Electric Blue */
+    }
+    p {
+      margin-bottom: 1em;
+    }
+    strong {
+      color: #1E90FF; /* Electric Blue */
+    }
+
+    /* Container */
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    /* Cards */
+    .card {
+      background: #222;
+      border-radius: 12px;
+      padding: 15px 20px;
+      margin-bottom: 1.5rem;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 2px 5px rgba(255 255 255 / 0.1);
+    }
+    .card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 8px 20px rgba(30, 144, 255, 0.5); /* Electric Blue glow */
+    }
+
+    /* Grid layout */
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+    }
+
+    /* Lists */
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    li {
+      background: #333;
+      margin-bottom: 8px;
+      padding: 8px 12px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      font-weight: 600;
+    }
+    li::before {
+      content: "★";
+      color: #1E90FF; /* Electric Blue star */
+      margin-right: 8px;
+      font-size: 1rem;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #777;
+      margin-top: 3rem;
+      user-select: none;
+    }
+
+    /* Responsive */
+    @media (max-width: 700px) {
+      .grid-2 {
+        grid-template-columns: 1fr;
+      }
+      .grid-3 {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Jeb's Roblox Portfolio</h1>
+      <p style="text-align:center; color:#999; font-style:italic; margin-top:-1em;">
+        Project Manager • Team Leader • Communicator
+      </p>
+    </header>
+
+    <section id="about-me">
+      <h2>About Me</h2>
+      <p>Hi! I'm Jeb, a Roblox Project Manager and skilled modeler with a passion for helping teams do their best work. I’ve worked with <strong>Ashen Trial Studios</strong> as a Head Moderator, where I made sure our projects stayed on track and everyone had what they needed to succeed. I also create high-quality models that bring ideas to life.</p>
+      <p>I also served as an Administrator at <strong>BWT</strong>, helping manage teams, handle internal operations, and keep the workflow smooth and productive. These roles helped me grow both technically and professionally.</p>
+      <p>I believe in simple plans, clear goals, and strong teamwork. My job is to make sure everyone on the team is supported and can focus on creating great content without getting stuck on logistics.</p>
+      <p>I enjoy turning ideas into finished projects and keeping things organized from start to finish. Whether it’s tracking progress, communicating between departments, or solving unexpected problems, I’m always ready to step in and help.</p>
+      <p>What I love most is seeing a project go from concept to something players enjoy. Helping a team reach that point is what drives me every day.</p>
+    </section>
+
+    <section id="skills-tools">
+      <h2>Skills & Tools</h2>
+      <div class="grid-2">
+        <div>
+          <h3>Skills</h3>
+          <ul>
+            <li>Team Leadership</li>
+            <li>Agile Workflow</li>
+            <li>Trello & Notion</li>
+            <li>Testing and QA</li>
+            <li>Clear Communication</li>
+            <li>Roblox Studio Basics</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Tools I Use</h3>
+          <ul>
+            <li>Roblox Studio & Lua (game development and scripting)</li>
+            <li>Trello, Asana, ClickUp (project management)</li>
+            <li>Discord Bot Development (Discord.js, Python)</li>
+            <li>Google Drive & Notion (docs, planning)</li>
+            <li>Adobe Photoshop & Canva (banners, branding)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="modeling">
+      <h2>Modeling Work</h2>
+      <div class="grid-2">
+        <div class="card">
+          <h3>Fantasy Castle</h3>
+          <p>A detailed medieval castle with intricate towers and walls.</p>
+        </div>
+        <div class="card">
+          <h3>Sci-Fi Hovercar</h3>
+          <p>A sleek futuristic vehicle designed for fast-paced gameplay.</p>
+        </div>
+        <div class="card">
+          <h3>Ancient Ruins</h3>
+          <p>Weathered stone structures with a mysterious vibe.</p>
+        </div>
+        <div class="card">
+          <h3>Modern House</h3>
+          <p>A stylish and functional home model for player housing.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials">
+      <h2>Testimonials</h2>
+      <div class="grid-2">
+        <div class="card">
+          <p><em>“Working with Jeb was an absolute breeze. The project was managed with precision from start to finish and submitted right on time—no delays, no excuses. On top of that, Jeb's server moderation skills are outstanding. It’s one of the few communities where I feel genuinely safe and respected.”</em></p>
+          <p><strong>- Imaboodboi</strong></p>
+        </div>
+        <div class="card">
+          <p><em>“Deadlines? Handled. Chaos? Tamed. Jeb is seriously underrated when it comes to managing projects and communities. He strikes the perfect balance between being approachable and staying firm when needed. The server feels like a safe, friendly space because of his consistent leadership.”</em></p>
+          <p><strong>- BarbieFeetLicker472</strong></p>
+        </div>
+        <div class="card">
+          <p><em>“I’ve seen a lot of mods come and go, but none have managed things like Jeb. The project was completed exactly when he said it would be, with clear communication every step of the way. He keeps the server peaceful, welcoming, and free of unnecessary drama.”</em></p>
+          <p><strong>- Milklover</strong></p>
+        </div>
+        <div class="card">
+          <p><em>“If you want someone reliable, organized, and calm under pressure, Jeb is the one. The project ran smoothly and was completed right on schedule. His moderation keeps the server clean, inclusive, and genuinely enjoyable to be part of.”</em></p>
+          <p><strong>- Pringles</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="grid-3">
+        <div class="card">
+          <h3>Forgotten Trial</h3>
+          <p><strong>Role:</strong> Project Manager</p>
+          <p>Managed the overall development of Forgotten Trial, ensuring smooth collaboration between scripters, builders, and designers. Helped shape gameplay systems and kept production timelines on track.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2025 Jeballon. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>
